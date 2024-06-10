@@ -1,0 +1,26 @@
+VAR
+    sentence: STRING;
+    i: INTEGER ;
+    numbers_caractere, numbers_mot, numbers_voyelle :INTEGER ;
+BEGIN
+    // l'utlisateur donne une phrase et l'algorithme calcul le nombre de mot, le nombre de caractere, le nombre de voyelle;
+    write("Donnez une phrase") // Bonjour chers internautes, vous etes sur ma page.["B","O"......"e"]
+    read(sentence)
+    numbers_caractere = sentence.length
+    numbers_mot = 1
+    numbers_voyelle = 0
+    FOR i FROM 0 TO numbers_caractere STEP 1 
+    IF(sentence [i]=== "")THEN
+        numbers_mot=numbers_mot+1
+        END_IF
+        IF (sentence [i]==="a")OR (sentence[i]==="i") OR (sentence [i]==="u")OR (sentence[i]==="e") OR (sentence [i]==="o")
+            numbers_voyelle = numbers_voyelle + 1
+            END_IF
+    END_FOR
+
+    write("le nombre de caractere de votre phrase est de:",numbers_caractere) output =45
+    write("le nombre de caractere de votre phrase est de:",numbers_mot) // output = 8
+    write("le nombre de caractere de votre phrase est de:",numbers_voyelle) // output = 5
+    console.log(numbers_caractere)
+    
+
